@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       
+</head>
+<body>
+    <form action="">
+        <table width="350">
+            <caption>
+                <h2>Login</h2>
+            </caption>
+            <tr>
+                <td>UserName</td>
+                <td>
+                    <input type="text" name="userName" id="userName" placeholder="Nhập tên đăng nhập">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Nhập mậu khẩu">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Login" name="login" id="login" onclick="checklogin()"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+         function checklogin()
+        {
+            var userName = document.getElementById("userName");
+            var password = document.getElementById("password");
+            if(userName.value=="")
+            {
+                alert("Ban chua nhap user Name");
+                userName.focus();
+            }else if(password.value=="")
+            {
+                alert("ban chua nhap password");
+                password.focus();
+            }
+        }
+    </script>
+    </script>
+</body>
+</html>
